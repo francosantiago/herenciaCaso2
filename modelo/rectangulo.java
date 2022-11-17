@@ -12,8 +12,14 @@ public class rectangulo extends Figura
 
     public double calcularPerimetroR()
     {
-        double perimetro = ((2*a) + (2*b));
+        perimetro = ((2*a) + (2*b));
         return perimetro;
+    }
+
+    public double areaR()
+    {
+        area = a * b;
+        return area;
     }
     
 }
