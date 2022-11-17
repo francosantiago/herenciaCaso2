@@ -2,23 +2,24 @@ package modelo;
 
 public class rectangulo extends Figura
 {
-    private double a;
-    private double b;
+    private double ladoA;
+    private double ladoB;
     
-    public rectangulo(double a, double p)
+    public rectangulo(double la, double lb)
     {
-        super(p, a);
+        this.ladoA = la;
+        this.ladoB = lb;
     }
 
     public double calcularPerimetroR()
     {
-        perimetro = ((2*a) + (2*b));
+        perimetro = ((2*ladoA) + (2*ladoB));
         return perimetro;
     }
 
     public double areaR()
     {
-        area = a * b;
+        area = ladoA * ladoB;
         return area;
     }
     

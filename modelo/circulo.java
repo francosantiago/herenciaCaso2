@@ -1,23 +1,23 @@
 package modelo;
 
-public class circulo 
+public class circulo extends Figura
 {
     private double r;
 
-    public circulo(double a, double p)
+    public circulo(double r)
     {
-        super(p,a);
+        this.r = r;
     }
 
     public double calcularPerimetroC()
     {
-        double perimetroC = 2*Math.PI*r;
-        return perimetroC;
+        perimetro = 2*Math.PI*r;
+        return perimetro;
     }
-    public double areaC()
+    public double area()
     {
-        double areaC = Math.PI * Math.pow(r, 2);
-        return areaC();
+        area = Math.PI * Math.pow(r, 2);
+        return area();
     }
 
 
